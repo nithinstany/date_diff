@@ -20,9 +20,19 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
-  spec.add_development_dependency "activesupport"
-  spec.add_development_dependency "i18n"
+  
+  if RUBY_VERSION == "1.9.3"
+    spec.add_development_dependency "activesupport"
+  end
+  
   if RUBY_VERSION == "1.8.7"
-      spec.add_development_dependency 'minitest', '3.2.0'
+    spec.add_development_dependency "activesupport", "2.3.12"
+    spec.add_development_dependency 'minitest', '3.2.0'
   end  
+  
+  if RUBY_VERSION == "1.9.2"
+	  spec.add_development_dependency "activesupport", "3.2.11"
+  end
+  
+  spec.add_development_dependency "i18n"
 end
