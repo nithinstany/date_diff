@@ -2,6 +2,8 @@
 
 Gem which calculates how many years, months and days are there between two dates
 
+[![Build Status](https://travis-ci.org/nithinstany/date_diff.png?branch=master)](https://travis-ci.org/nithinstany/date_diff)
+
 ## Installation
 
 Add this line to your application's Gemfile:
