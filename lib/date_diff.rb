@@ -15,7 +15,7 @@ class Date
     day_difference = end_date_day - start_date_day
 
     if (day_difference < 0)
-      day_difference = nday[start_date_month-1] - start_date_day + end_date_day
+      day_difference = common_year_days_in_month[start_date_month-1] - start_date_day + end_date_day
       end_date_month = end_date_month -1
     end
 
